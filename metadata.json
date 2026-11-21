@@ -1,0 +1,6 @@
+{
+  "name": "DecisionFlow",
+  "description": "From meeting decisions to verified execution. A stateful Meeting-to-Execution Agent for persistent organizational memory, conflict detection, human approval, and tracked execution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

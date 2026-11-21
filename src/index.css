@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* 1. Raven Teal — 60% Dominant Brand & Primary Interface */
+  --color-raven-950: #0d2329;
+  --color-raven-900: #133138;
+  --color-raven-800: #1b434d;
+  --color-raven-700: #245763;
+  --color-raven-600: #2f6c7a;
+  --color-raven-400: #6e9ea8;
+  --color-raven-300: #9dc0c8;
+  --color-raven-200: #c5d9de;
+  --color-raven-100: #e3eef0;
+  --color-raven-50: #f2f7f8;
+
+  /* 2. Seagrass Grey — 30% Supporting Neutral */
+  --color-seagrass-800: #2c3733;
+  --color-seagrass-700: #3d4b46;
+  --color-seagrass-600: #52615c;
+  --color-seagrass-500: #5f6e68;
+  --color-seagrass-400: #879690;
+  --color-seagrass-300: #bcc7c2;
+  --color-seagrass-200: #d8e0dc;
+  --color-seagrass-100: #eaeff0;
+  --color-seagrass-50: #f4f6f5;
+
+  /* 3. Apricot Flare — 10% Sparingly Used Accent */
+  --color-apricot-700: #a64615;
+  --color-apricot-600: #c9581d;
+  --color-apricot-500: #e57235;
+  --color-apricot-400: #ef8b54;
+  --color-apricot-300: #f4ae84;
+  --color-apricot-200: #f7cfb7;
+  --color-apricot-100: #fde8da;
+  --color-apricot-50: #fff6f0;
+}
+
+@layer base {
+  html, body {
+    font-family: var(--font-sans);
+    background-color: var(--color-seagrass-100);
+    color: var(--color-raven-950);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
